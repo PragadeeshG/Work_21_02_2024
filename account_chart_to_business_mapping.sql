@@ -1,0 +1,16 @@
+create table if not exists account_chart_to_business_mapping(
+set_id integer not null,
+account_id integer null,
+mapping_set_id integer null,
+department varchar(255) null,
+business_indicator integer null,
+account_mapped_to_function char null,
+is_active char null,
+function_name varchar(255) null,
+function_type varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint account_chart_to_business_mapping_pk primary key(set_id));
